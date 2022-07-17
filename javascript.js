@@ -21,5 +21,13 @@ function generate() {
     var message = document.getElementById("message");
     var includeChars = []
 
+    var checkBoxLength = checkBoxes.length;
+    for (i = 0; i <checkBoxLength; i++) {
+        if (checkBoxes[i].firstElementChild.checked) {
+            includeChars.push(charTypes[i]);
+        }
+    }
     
+
+
 }
