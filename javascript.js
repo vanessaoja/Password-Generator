@@ -27,7 +27,22 @@ function generate() {
             includeChars.push(charTypes[i]);
         }
     }
-    
+    if (includeChars == '') {
+        message.innerHTML = "Please select at least one character type"
+    }
+    else {
+        generatePassword(message, includeChars)
+    }
+}
 
+function generatePassword (message, includeChars) {
+    var passLength = document.getElementById("length").ariaValueMax;
+    let password = "";
 
+    for (let i = 0; i< passLength; i++) {
+        //for (let j = 0; j < incldeChars.length; j++)
+        // password += includeChars[j].charAt(
+        //      Math.floor(Math.random() * includeChars[j].length)
+        // )
+    }
 }
