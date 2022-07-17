@@ -11,3 +11,15 @@ const alphaLower = "abcdefghijklmnopqrstuvwxyz"
 const numeric = "0123456789"
 const special = "!@#$%^&*_-+="
 const charTypes = [alphaUpper, alphaLower, numeric, special]
+
+function showCriteria() {
+    document.getElementById("criteria").style.visibility = "visible";
+}
+
+function generate() {
+    var checkboxes = document.getElementsByClassName("check-box");
+    var message = document.getElementById("message");
+    var includeChars = []
+
+    
+}
