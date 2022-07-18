@@ -17,7 +17,7 @@ function showCriteria() {
 }
 
 function generate() {
-    var checkboxes = document.getElementsByClassName("check-box");
+    var checkBoxes = document.getElementsByClassName("check-box");
     var message = document.getElementById("message");
     var includeChars = []
 
@@ -36,7 +36,7 @@ function generate() {
 }
 
 function generatePassword (message, includeChars) {
-    var passLength = document.getElementById("length").ariaValueMax;
+    var passLength = document.getElementById("length").value;
     let password = "";
 
     for (let i = 0; i< passLength; i++) {
@@ -44,5 +44,10 @@ function generatePassword (message, includeChars) {
         // password += includeChars[j].charAt(
         //      Math.floor(Math.random() * includeChars[j].length)
         // )
+        let charType = Math.floor(Math.random() * includeChars.length)
+        password += includeChars[charType].charAt(
+            Math.floor(Math.random() * includeChars[charType].length)
+        )
     }
+    message.innerHTML = 'New password: ' + password;
 }
