@@ -4,26 +4,19 @@
 
 
 - By creating code using HTML, CSS, and Javascript this generator was to successfully give random passwords. This motivated the idea of having any user of the password generator to feel secure, knowing their information would stay safe within the confines of the site.
-- O
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- Each module exercise allows students to expand knowledge in coding, being the ideal reason to create the required project.
+- The Password Generator solved the issue of lack of imagination and inability for the average user to logically create a password that an unwanted person(s) to enter a site that contains sensitive information.
+- While creating the Password Generator my knowledge of button creation expanded. Since the password needs to follow certain reqirements learning randomization was imperative.
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+The installation process began with developing an HTML document. This included script to connect to CSS so the site could be visually pleasing and to JS in order to make the labels for the buttons to work.The password Generator began with creating specifications for the password to generate letters and numbers within a certain length. The checkboxes where then created by making a class and type to include special characters and uppercase letters.
+The CSS document was created by using background-color and h1-h3 color change.
+The Javascript document began bu using a constant for the required criteria for the generated password. Function statements were then written to generate the password and have the checkboxes work through the connection to HTML.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Generating a new password is easy using the code I created. Simply click on the button that says "Show Password Criteria". This will pop up a bar that will allow the user to choose a password length from 8-128 characters. Two boxes will also show up giving the user the uption to click them to include uppercase letters and/or special characters if desired. After the user inputs their choice they will then hit the button that says "Generate Password" which will cause their new and secure password to generate.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
